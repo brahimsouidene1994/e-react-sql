@@ -1,0 +1,17 @@
+.container{
+    margin-bottom: 2em;
+    height: 70vh;
+    width: 100%;
+    display: table;
+}
+.container > h1{
+    text-align: center;
+    margin: 1em 0
+}
+.form-control{
+    margin: 1rem 0;
+}
+.btn-primary{
+    width: 10rem;
+    float: right;
+}

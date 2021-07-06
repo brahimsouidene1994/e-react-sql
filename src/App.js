@@ -1,24 +1,31 @@
-import logo from './logo.svg';
 import './App.css';
+import React from 'react';
+import {Switch ,Route} from 'react-router-dom';
+import Navbar from './component/Navbar';
+import Modal from './component/Modal';
+import PhoneList from './component/PhoneList';
+import Details from './component/pages/Details';
+import Cart from './component/pages/cart/Cart';
+import EmptyPage from './component/pages/EmptyPage';
+import Home from './component/pages/Home';
 
+import Footer from './component/Footer';
+import AddPhone from './component/pages/AddPhone';
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <React.Fragment>
+    <Navbar />
+    <Switch>
+      <Route exact path="/" component={Home}/>
+      <Route path="/phones" component={PhoneList}/>
+      <Route path="/details" component={Details}/>
+      <Route path="/cart" component={Cart}/>
+      <Route path="/add-new-phone" component={AddPhone}/>
+      <Route component={EmptyPage}/>
+    </Switch> 
+     <Modal/> 
+    <Footer/>
+  </React.Fragment>     
   );
 }
 

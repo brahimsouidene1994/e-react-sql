@@ -1,0 +1,6 @@
+.container-phones{ 
+    padding: 20px 40px; 
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 5% 5% 0 0 ;
+    max-width: 100%;
+}

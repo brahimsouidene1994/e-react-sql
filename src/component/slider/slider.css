@@ -1,0 +1,30 @@
+.carousel{
+    margin-top: -200px;
+    margin-bottom: 40px ;
+    width:90vw;
+    height: 80vh;
+    position: absolute;
+    
+}
+.container-slider{
+    height: 100%;
+    padding:20px;
+    background: rgba(241, 237, 237, 0.5);
+    border-radius: 20px;
+    margin:30px 0;
+}
+.model-phone{
+
+    text-transform: capitalize;
+}
+.model-phone > h1{
+    font-size: 20px;
+}
+.model-phone > h4{
+    font-size: 18px;
+    color: aquamarine;
+}
+.img-fluid{
+    height: 60%;
+    width: 80vw;
+}

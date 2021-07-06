@@ -1,0 +1,8 @@
+.cart-container{
+    margin: 40px 10px ;
+}
+.column-head{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: sans-serif;
+}
